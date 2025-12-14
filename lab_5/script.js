@@ -43,7 +43,7 @@ async function loadQuotes() {
         renderQuotes(data);
 
     } catch (error) {
-        // ❗ КЛЮЧОВИЙ МОМЕНТ ДЛЯ ЛАБИ
+        // КЛЮЧОВИЙ МОМЕНТ ДЛЯ ЛАБИ
         console.warn('API недоступне, використано fallback');
 
         resultDiv.innerHTML =
@@ -58,3 +58,4 @@ async function loadQuotes() {
 
 loadBtn.addEventListener('click', loadQuotes);
 loadQuotes();
+
